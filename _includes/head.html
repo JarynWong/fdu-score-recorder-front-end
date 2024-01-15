@@ -1,0 +1,18 @@
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+  <meta name="description" content="{% if page.description %}{{ page.description | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+
+  <link rel="stylesheet" href="{{ '/assets/css/main.css' | prepend: site.baseurl }}">
+  <link rel="shortcut icon" type="image/png" href="{{ '/assets/image/favicon.png' }}" >
+  <link rel="stylesheet" href="../assets/css/success.css">
+  <link rel="stylesheet" href="../assets/css/error.css">
+  <link rel="stylesheet" href="../assets/css/login.css">
+  <link rel="stylesheet" href="../assets/css/warn.css">
+  <script src="https://d3js.org/d3.v6.min.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/billboard.js/dist/theme/insight.css">
+  <script src="https://unpkg.com/billboard.js/dist/billboard.min.js"></script>
+</head>

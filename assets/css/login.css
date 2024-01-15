@@ -1,0 +1,189 @@
+
+.login-container {
+    width: 90%; /* 容器宽度根据内容调整 */
+    display: none;
+    text-align: center;
+    vertical-align: middle;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    flex-direction: column; /* 子元素垂直排列 */
+}
+.input-group {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    visibility: visible;
+    display: inline-block; /* 或 inline, inline-block 等 */
+}
+
+.list-group {
+    width: 100%;
+    display: flex;
+}
+
+
+.form-field {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.login-button {
+    width: 100%;
+    padding: 10px;
+    background-color: 	#363636;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.login-button:hover {
+    background-color: #0056b3;
+}
+#applyingMajorId {
+    width: 100%;
+    padding: 10px;
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 轻微的阴影效果 */
+    -webkit-appearance: none; /* 移除iOS默认样式 */
+    -moz-appearance: none; /* 移除Firefox默认样式 */
+    appearance: none; /* 移除默认样式 */
+    cursor: pointer; /* 将鼠标指针变为手指形状 */
+}
+
+/* 为了更好的视觉效果，可能还需要添加一个自定义的下拉箭头 */
+#applyingMajorId {
+    background-image: url('data:image/svg+xml;utf8,<svg fill="%23000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>');
+    background-repeat: no-repeat;
+    background-position-x: 98%;
+    background-position-y: 50%;
+}
+
+/* 调整select焦点样式 */
+#applyingMajorId:focus {
+    outline: none; /* 移除焦点时的默认外框 */
+    border: 1px solid #a9a9a9; /* 添加自定义的焦点边框 */
+}
+#subjectType {
+
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 轻微的阴影效果 */
+    -webkit-appearance: none; /* 移除iOS默认样式 */
+    -moz-appearance: none; /* 移除Firefox默认样式 */
+    appearance: none; /* 移除默认样式 */
+    cursor: pointer; /* 将鼠标指针变为手指形状 */
+}
+
+/* 屏幕宽度小于600px时 */
+@media (max-width: 600px) {
+    #subjectType {
+        width: 40%;
+    }
+}
+
+/* 屏幕宽度小于400px时 */
+@media (min-width: 601px) {
+    #subjectType {
+        width: 20%;
+    }
+}
+
+/* 为了更好的视觉效果，可能还需要添加一个自定义的下拉箭头 */
+#subjectType {
+    background-image: url('data:image/svg+xml;utf8,<svg fill="%23000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>');
+    background-repeat: no-repeat;
+    background-position-x: 98%;
+    background-position-y: 50%;
+}
+
+/* 调整select焦点样式 */
+#subjectType:focus {
+    outline: none; /* 移除焦点时的默认外框 */
+    border: 1px solid #a9a9a9; /* 添加自定义的焦点边框 */
+}
+
+.queryScore-button {
+    margin-left: 10px;
+    background-color: 	#363636;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.queryScore-button:hover {
+    background-color: #4F4F4F;
+
+}
+
+/* 屏幕宽度小于600px时 */
+@media (max-width: 600px) {
+    .queryScore-button {
+        width: 20%;
+    }
+}
+
+/* 屏幕宽度大于600px时 */
+@media (min-width: 601px) {
+    .queryScore-button {
+        width: 20%;
+    }
+}
+
+/* 屏幕宽度小于600px时 */
+@media (max-width: 600px) {
+    .h1Title {
+        font-size: 1.5rem;
+    }
+}
+
+/* 屏幕宽度大于600px时 */
+@media (min-width: 601px) {
+    .h1Title {
+        font-size: 2.5rem;
+    }
+}
+
+/* 屏幕宽度小于600px时 */
+@media (max-width: 600px) {
+    .site-title {
+        font-size: 28px;
+    }
+}
+
+/* 屏幕宽度小于600px时 */
+@media (max-width: 600px) {
+    .site-description {
+        font-size: 15px;
+    }
+}
+
+#rankAlert {
+    display: flex;
+    justify-content: center; /* 水平居中 */
+    align-items: center; /* 垂直居中 */
+}
+#rankAlert {
+    display: flex;
+    justify-content: center; /* 水平居中 */
+    align-items: center; /* 垂直居中 */
+}

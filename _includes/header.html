@@ -1,0 +1,112 @@
+<div id="particles-js">
+    <div class="header">
+        <h1>
+            <span class="site-title"
+                  style="font-size: 33px; white-space: nowrap; font-weight: bold; margin-top: -100px;">{{ site.username }}</span>
+            <br>
+            <span class="site-description" style="font-size: 18px;font-weight: normal; ">{{ site.user_title }}</span>
+        </h1>
+        <div class="login-container">
+            <div class="input-group">
+                <input type="text" id="username" name="username" placeholder="查分时填写的用户名" required>
+            </div>
+            <div class="input-group">
+                <input type="password" id="password" name="password" placeholder="密码" required>
+            </div>
+            <div class="list-group">
+                <select id="applyingMajorId" name="applyingMajorId">
+                    <option value="" selected disabled hidden>请选择你的报考院系</option>
+                </select>
+            </div>
+            <div class="form-field">
+                <button id="login-button" class="login-button">登录</button>
+            </div>
+        </div>
+        <!--        <div class="header-icons">-->
+        <!--            &lt;!&ndash;        {% if site.email %}&ndash;&gt;-->
+        <!--            &lt;!&ndash;        <a aria-label="Send email" href="mailto:{{ site.email }}"><i class="icon fa fa-envelope"></i></a>&ndash;&gt;-->
+        <!--            &lt;!&ndash;        {% endif %}&ndash;&gt;-->
+        <!--            &lt;!&ndash;        {% if site.twitter_username %}&ndash;&gt;-->
+        <!--            &lt;!&ndash;        <a aria-label="My Twitter" target="_blank" href="https://twitter.com/{{ site.twitter_username }}"><i class="icon fa fa-twitter" aria-hidden="true"></i></a>&ndash;&gt;-->
+        <!--            &lt;!&ndash;        {% endif %}&ndash;&gt;-->
+        <!--            &lt;!&ndash;        {% if site.instagram_username %}&ndash;&gt;-->
+        <!--            &lt;!&ndash;        <a aria-label="My Instagram" target="_blank" href="https://www.instagram.com/{{ site.instagram_username }}"><i class="icon fa fa-instagram" aria-hidden="true"></i></a>&ndash;&gt;-->
+        <!--            &lt;!&ndash;        {% endif %}&ndash;&gt;-->
+        <!--            &lt;!&ndash;        {% if site.facebook_username %}&ndash;&gt;-->
+        <!--            &lt;!&ndash;        <a aria-label="My Facebook" target="_blank" href="https://www.facebook.com/{{ site.facebook_username }}"><i class="icon fa fa-facebook" aria-hidden="true"></i></a>&ndash;&gt;-->
+        <!--            &lt;!&ndash;        {% endif %}&ndash;&gt;-->
+        <!--            &lt;!&ndash;        {% if site.linkedin_username %}&ndash;&gt;-->
+        <!--            &lt;!&ndash;        <a aria-label="My LinkedIn" target="_blank" href="https://www.linkedin.com/in/{{ site.linkedin_username }}"><i class="icon fa fa-linkedin-square" aria-hidden="true"></i></a>&ndash;&gt;-->
+        <!--            &lt;!&ndash;        {% endif %}&ndash;&gt;-->
+        <!--            {% if site.github_username %}-->
+        <!--            <a aria-label="My Github" class="site-description"-->
+        <!--               style="font-size: 20px;font-weight: normal; font-family: 'Times New Roman'; target=" _blank"-->
+        <!--            href="https://github.com/FlakReaper/FlakReaper"><i class="icon fa fa-github-alt" aria-hidden="true"></i>https://github.com/FlakReaper/FlakReaper</a>-->
+        <!--            {% endif %}-->
+        <!--            {% if site.medium_username %}-->
+        <!--            <a aria-label="My Medium" target="_blank" href="https://medium.com/{{ site.medium_username }}"><i-->
+        <!--                    class="icon fa fa-medium" aria-hidden="true"></i></a>-->
+        <!--            {% elsif site.medium_url %}-->
+        <!--            <a aria-label="My Medium" target="_blank" href="https://{{ site.medium_url }}"><i class="icon fa fa-medium"-->
+        <!--                                                                                              aria-hidden="true"></i></a>-->
+        <!--            {% endif %}-->
+        <!--        </div>-->
+        <div class="header-links">
+            <!-- <a class="link" href="#about" data-scroll>About Me</a> -->
+        </div>
+
+    </div>
+    <a class="down" href="#about" data-scroll><i class="icon fa fa-chevron-down" aria-hidden="true"></i></a>
+
+</div>
+<div id="error-box" class="error-box">
+    <div class="error-content">
+        <div class="error-icon">
+            <svg t="1704531077382" class="icon" viewBox="0 0 1024 1024" version="1.1"
+                 xmlns="http://www.w3.org/2000/svg" p-id="5334" width="200" height="200">
+                <path d="M512 981.333333C252.8 981.333333 42.666667 771.2 42.666667 512S252.8 42.666667 512 42.666667s469.333333 210.133333 469.333333 469.333333-210.133333 469.333333-469.333333 469.333333z m44.245333-469.333333l159.914667-159.914667a31.274667 31.274667 0 1 0-44.245333-44.245333L512 467.754667 352.085333 307.84a31.274667 31.274667 0 1 0-44.245333 44.245333L467.754667 512l-159.914667 159.914667a31.274667 31.274667 0 1 0 44.245333 44.245333L512 556.245333l159.914667 159.914667a31.274667 31.274667 0 1 0 44.245333-44.245333L556.245333 512z"
+                      fill="#F5222D" p-id="5335"></path>
+            </svg>
+            <!--                <svg t="1704530950745" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="4213" width="200" height="200"><path d="M802.922882 383.309012 428.076612 758.155283 220.943065 551.154765c-22.317285-22.317285-22.317285-55.993269 0-78.310553 22.450315-22.450315 55.993269-22.450315 78.443583 0l128.689964 128.689964L724.613352 304.999482c22.450315-22.450315 55.993269-22.450315 78.30953 0C825.373197 327.316767 825.373197 360.858698 802.922882 383.309012zM512 64.322981c-246.155283 0-447.677019 201.521736-447.677019 447.677019s201.521736 447.677019 447.677019 447.677019 447.677019-201.521736 447.677019-447.677019S758.155283 64.322981 512 64.322981z" fill="#22C134" p-id="4214"></path></svg>-->
+        </div>
+        <div class="error-message">
+            <p></p>
+        </div>
+    </div>
+</div>
+<div id="warn-box" class="warn-box">
+    <div class="warn-content">
+        <div class="warn-icon">
+            <svg t="1704699378672" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                 p-id="2339" width="200" height="200">
+                <path d="M512 0C373.76 0 245.76 51.2 148.48 148.48 56.32 245.76 0 373.76 0 506.88 0 793.6 225.28 1024 506.88 1024c286.72 0 517.12-225.28 517.12-506.88C1024 230.4 798.72 0 512 0z m0 957.44c-250.88 0-450.56-199.68-445.44-450.56 0-245.76 199.68-445.44 445.44-440.32 245.76 0 445.44 199.68 445.44 445.44 0 250.88-194.56 445.44-445.44 445.44zM460.8 424.96v163.84c0 35.84 20.48 46.08 56.32 46.08 35.84 0 35.84-20.48 35.84-46.08 5.12-97.28 5.12-194.56 10.24-291.84 5.12-35.84 0-61.44-51.2-61.44S455.68 256 455.68 296.96L460.8 424.96z m117.76 337.92c-5.12 40.96-30.72 61.44-66.56 61.44-35.84 0-61.44-20.48-66.56-56.32-5.12-40.96 20.48-61.44 61.44-61.44 40.96-5.12 61.44 20.48 71.68 56.32z"
+                      fill="#FAB427" p-id="2340"></path>
+            </svg>
+            <!--                <svg t="1704530950745" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="4213" width="200" height="200"><path d="M802.922882 383.309012 428.076612 758.155283 220.943065 551.154765c-22.317285-22.317285-22.317285-55.993269 0-78.310553 22.450315-22.450315 55.993269-22.450315 78.443583 0l128.689964 128.689964L724.613352 304.999482c22.450315-22.450315 55.993269-22.450315 78.30953 0C825.373197 327.316767 825.373197 360.858698 802.922882 383.309012zM512 64.322981c-246.155283 0-447.677019 201.521736-447.677019 447.677019s201.521736 447.677019 447.677019 447.677019 447.677019-201.521736 447.677019-447.677019S758.155283 64.322981 512 64.322981z" fill="#22C134" p-id="4214"></path></svg>-->
+        </div>
+        <div class="warn-message">
+            <p></p>
+        </div>
+        <div class="button-container">
+            <button class="blue-button" id="confirmButton">是</button>
+            <button class="white-button" id="cancelButton">否</button>
+        </div>
+    </div>
+</div>
+<div id="success-box" class="success-box">
+    <div class="success-content">
+        <div class="success-icon">
+            <svg t="1704530950745" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                 p-id="4213" width="200" height="200">
+                <path d="M802.922882 383.309012 428.076612 758.155283 220.943065 551.154765c-22.317285-22.317285-22.317285-55.993269 0-78.310553 22.450315-22.450315 55.993269-22.450315 78.443583 0l128.689964 128.689964L724.613352 304.999482c22.450315-22.450315 55.993269-22.450315 78.30953 0C825.373197 327.316767 825.373197 360.858698 802.922882 383.309012zM512 64.322981c-246.155283 0-447.677019 201.521736-447.677019 447.677019s201.521736 447.677019 447.677019 447.677019 447.677019-201.521736 447.677019-447.677019S758.155283 64.322981 512 64.322981z"
+                      fill="#22C134" p-id="4214"></path>
+            </svg>
+        </div>
+        <div class="success-message">
+            <p></p>
+        </div>
+    </div>
+</div>
+<script src="../assets/js/warn.js"></script>
+<script src="../assets/js/login.js"></script>
+<script src="../assets/js/util.js"></script>

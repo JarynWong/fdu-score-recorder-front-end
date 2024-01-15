@@ -1,0 +1,21 @@
+# Site settings
+title: 2024考研FDU录分系统
+description: 系统不会记录密码，请放心使用！
+# baseurl: "" # the subpath of your site, e.g. /blog
+
+# User settings
+username: FDU考研录分系统
+user_description: 系统不会记录密码，请放心使用！
+user_title: 系统不会记录密码，请放心使用！
+email: 765780030@qq.com
+# twitter_username: lorem_ipsum
+instagram_username: Jaryn
+facebook_username: Jaryn
+linkedin_username: Jaryn
+github_username:  Jaryn
+# medium_username: lorem_ipsum
+# medium_url: lorem_ipsum.medium.com
+# gplus_username:  lorem_ipsum
+
+exclude: ['package.json', 'src', 'node_modules', 'vendor']
+

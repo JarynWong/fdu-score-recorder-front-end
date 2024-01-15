@@ -1,0 +1,89 @@
+/* style.css */
+.warn-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 50%;
+    left: 1%;
+    transform: translate(-50%, -50%);
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px; /* 根据实际需求调整 */
+    padding: 20px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    z-index: 1000;
+}
+
+.warn-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.warn-icon svg {
+    width: 70px; /* 或者您希望的任何尺寸 */
+    height: auto; /* SVG 通常会自动保持宽高比 */
+}
+
+.warn-message  {
+    font-size: 18px;
+    color: #333;
+}
+.blue-button {
+    display: flex; /* 使用Flexbox布局 */
+    justify-content: center; /* 水平居中对齐 */
+    align-items: center; /* 垂直居中对齐 */
+    background-color: 	#363636;
+    color: white; /* 白色文字 */
+    padding: 10px 20px; /* 内边距 */
+    text-align: center; /* 文字居中 */
+    text-decoration: none; /* 无下划线 */
+    font-size: 16px; /* 字体大小 */
+    margin: 4px 2px; /* 外边距 */
+    cursor: pointer; /* 鼠标指针变为手型 */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* 盒子阴影 */
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.blue-button:hover {
+    background-color: #0056b3; /* 鼠标悬浮时的背景颜色 */
+}
+.white-button {
+    display: flex; /* 使用Flexbox布局 */
+    justify-content: center; /* 水平居中对齐 */
+    align-items: center; /* 垂直居中对齐 */
+    background-color: white; /* 白色背景 */
+    color: #000000; /* 文字颜色与蓝色按钮相同 */
+    padding: 10px 20px; /* 内边距 */
+    text-align: center; /* 文字居中 */
+    text-decoration: none; /* 无下划线 */
+    font-size: 16px; /* 字体大小 */
+    margin: 4px 2px; /* 外边距 */
+    cursor: pointer; /* 鼠标指针变为手型 */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 盒子阴影，稍微轻一些 */
+
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.white-button:hover {
+    background-color: #f0f0f0; /* 鼠标悬浮时的背景颜色 */
+    color: #0056b3; /* 鼠标悬浮时的文字颜色 */
+    border-color: #0056b3; /* 鼠标悬浮时的边框颜色 */
+}
+
+.button-container {
+    display: flex; /* 设置flex布局 */
+    justify-content: center; /* 水平居中 */
+    gap: 30px; /* 按钮之间的间隙 */
+    /* 如果需要的话，还可以设置垂直间距 */
+    margin-top: 5px; /* 与上方内容的距离 */
+    margin-bottom: 5px; /* 与下方内容的距离 */
+}

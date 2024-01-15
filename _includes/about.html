@@ -1,0 +1,87 @@
+<div class="user-details majorContent">
+  <h1 id = "applyingMajorName" class = "h1Title" style="font-weight: bold;">你报考的院系：</h1>
+</div>
+<div class="user-details majorContent">
+  <h1 class = "h1Title" style="font-weight: bold;">往年复试分数线</h1>
+  <div id="scoreLineChart"></div>
+</div>
+<div class="user-details majorContent">
+  <h1 class = "h1Title" id = "scoreStatisticTitle" style="font-weight: bold;">分数段统计</h1>
+  <div id="scoreColumnChart"></div>
+</div>
+
+
+<div class="user-details majorContent">
+  <h1 class = "h1Title" id = "rankTitle" style="font-weight: bold;" >排名</h1>
+
+  <div class="list-group">
+    <div id="rankAlert">总分/单科：</div>
+    <select id="subjectType" name="subjectType">
+      <option value="1">总分分数排名</option>
+      <option value="2">政治分数排名</option>
+      <option value="3">英语分数排名</option>
+      <option id="professionalCourse1Rank" value="4">专业课1分数排名</option>
+      <option id="professionalCourse2Rank" value="5">专业课2分数排名</option>
+    </select>
+    <button type="submit" id="queryScore-button" class="queryScore-button">查询</button>
+  </div>
+
+  <p id = "rankInfo" style="text-align: left;"></p>
+</div>
+
+<head>
+  <title>数据展示</title>
+  <style>
+    .table-container {
+      max-height: 800px; /* 根据每行的高度调整这个值 */
+      overflow-y: auto; /* 垂直方向上的滚动条 */
+      border: 1px solid black; /* 可选的边框样式 */
+    }
+
+    table {
+      width: 100%;        /* 设置表格宽度为100% */
+      border-collapse: collapse; /* 边框合并，使得边框看起来更加整洁 */
+      table-layout: fixed
+    }
+
+    table, th, td {
+      border: 1px solid black; /* 为表格、表头和单元格添加边框 */
+    }
+
+    th, td {
+      text-align: center; /* 使表头和单元格中的文本居中 */
+    }
+
+    td {
+      word-wrap: break-word;
+    }
+
+    thead {
+      background-color: #f2f2f2; /* 为表头添加背景颜色，可以根据需要调整 */
+    }
+  </style>
+</head>
+
+<body>
+<div class="table-container">
+
+<table id="scoreTable" class="majorContent">
+  <thead>
+  <tr>
+    <th>排名</th>
+    <th>政治</th>
+    <th>英语</th>
+    <th id="professionalCourse1Name">专业课1</th>
+    <th id="professionalCourse2Name">专业课2</th>
+    <th>总分</th>
+  </tr>
+  </thead>
+  <tbody>
+  <!-- 表格数据将通过JavaScript填充 -->
+  </tbody>
+</table>
+
+</div>
+
+</body>
+<script src="../assets/js/score.js"></script>
