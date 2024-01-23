@@ -82,7 +82,7 @@ function login() {
             } else if (data.hasOwnProperty('msg')) {
                 showError(data.msg)
             } else {
-                showSuccess("登录成功，请下拉查看录分情况")
+                showSuccess("登录成功，请下拉查看录分信息")
                 // 登陆成功
                 var loginContainer = document.querySelector('.login-container');
                 // 隐藏
@@ -110,7 +110,7 @@ function afterLogin(data) {
     // 显示报考院系
     var applyingMajorName = document.getElementById('applyingMajorName');
     if (applyingMajorName) {
-        applyingMajorName.textContent = "你报考的院系：" + res.applyingMajorName;
+        applyingMajorName.textContent = "你报考的院系-专业：" + res.applyingMajorName;
     }
     // 科目
     var rankTitle = document.getElementById('rankTitle');

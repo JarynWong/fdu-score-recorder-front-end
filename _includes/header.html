@@ -6,54 +6,51 @@
             <br>
             <span class="site-description" style="font-size: 18px;font-weight: normal; ">{{ site.user_title }}</span>
         </h1>
+
         <div class="login-container">
             <div class="input-group">
-                <input type="text" id="username" name="username" placeholder="查分时填写的用户名" required>
+                <input type="text" id="username" name="username" placeholder="查分网站的用户名" required>
             </div>
             <div class="input-group">
                 <input type="password" id="password" name="password" placeholder="密码" required>
             </div>
             <div class="list-group">
                 <select id="applyingMajorId" name="applyingMajorId">
-                    <option value="" selected disabled hidden>请选择你的报考院系</option>
+                    <option value="" selected disabled hidden>请选择报考院系-专业</option>
                 </select>
             </div>
             <div class="form-field">
                 <button id="login-button" class="login-button">登录</button>
             </div>
         </div>
-        <!--        <div class="header-icons">-->
-        <!--            &lt;!&ndash;        {% if site.email %}&ndash;&gt;-->
-        <!--            &lt;!&ndash;        <a aria-label="Send email" href="mailto:{{ site.email }}"><i class="icon fa fa-envelope"></i></a>&ndash;&gt;-->
-        <!--            &lt;!&ndash;        {% endif %}&ndash;&gt;-->
-        <!--            &lt;!&ndash;        {% if site.twitter_username %}&ndash;&gt;-->
-        <!--            &lt;!&ndash;        <a aria-label="My Twitter" target="_blank" href="https://twitter.com/{{ site.twitter_username }}"><i class="icon fa fa-twitter" aria-hidden="true"></i></a>&ndash;&gt;-->
-        <!--            &lt;!&ndash;        {% endif %}&ndash;&gt;-->
-        <!--            &lt;!&ndash;        {% if site.instagram_username %}&ndash;&gt;-->
-        <!--            &lt;!&ndash;        <a aria-label="My Instagram" target="_blank" href="https://www.instagram.com/{{ site.instagram_username }}"><i class="icon fa fa-instagram" aria-hidden="true"></i></a>&ndash;&gt;-->
-        <!--            &lt;!&ndash;        {% endif %}&ndash;&gt;-->
-        <!--            &lt;!&ndash;        {% if site.facebook_username %}&ndash;&gt;-->
-        <!--            &lt;!&ndash;        <a aria-label="My Facebook" target="_blank" href="https://www.facebook.com/{{ site.facebook_username }}"><i class="icon fa fa-facebook" aria-hidden="true"></i></a>&ndash;&gt;-->
-        <!--            &lt;!&ndash;        {% endif %}&ndash;&gt;-->
-        <!--            &lt;!&ndash;        {% if site.linkedin_username %}&ndash;&gt;-->
-        <!--            &lt;!&ndash;        <a aria-label="My LinkedIn" target="_blank" href="https://www.linkedin.com/in/{{ site.linkedin_username }}"><i class="icon fa fa-linkedin-square" aria-hidden="true"></i></a>&ndash;&gt;-->
-        <!--            &lt;!&ndash;        {% endif %}&ndash;&gt;-->
-        <!--            {% if site.github_username %}-->
-        <!--            <a aria-label="My Github" class="site-description"-->
-        <!--               style="font-size: 20px;font-weight: normal; font-family: 'Times New Roman'; target=" _blank"-->
-        <!--            href="https://github.com/FlakReaper/FlakReaper"><i class="icon fa fa-github-alt" aria-hidden="true"></i>https://github.com/FlakReaper/FlakReaper</a>-->
-        <!--            {% endif %}-->
-        <!--            {% if site.medium_username %}-->
-        <!--            <a aria-label="My Medium" target="_blank" href="https://medium.com/{{ site.medium_username }}"><i-->
-        <!--                    class="icon fa fa-medium" aria-hidden="true"></i></a>-->
-        <!--            {% elsif site.medium_url %}-->
-        <!--            <a aria-label="My Medium" target="_blank" href="https://{{ site.medium_url }}"><i class="icon fa fa-medium"-->
-        <!--                                                                                              aria-hidden="true"></i></a>-->
-        <!--            {% endif %}-->
-        <!--        </div>-->
-        <div class="header-links">
-            <!-- <a class="link" href="#about" data-scroll>About Me</a> -->
+        <br>
+        <div class="header-icons">
+            <a href="https://qm.qq.com/q/XrGcHhrhWq" class="icon-header-padding" target="_blank">
+                <svg t="1706000153742" class="icon icon-header" viewBox="0 0 1115 1024" version="1.1"
+                     xmlns="http://www.w3.org/2000/svg"
+                     p-id="12049" width="200" height="200">
+                    <path d="M374.9 365.714286c101.01 0 182.928571-81.847143 182.928571-182.857143 0-100.937143-81.918571-182.857143-182.928571-182.857143-100.938571 0-182.785714 81.92-182.785714 182.857143C192.114286 283.867143 273.961429 365.714286 374.9 365.714286z"
+                          fill="#ffffff" p-id="12050"></path>
+                    <path d="M777.037143 365.714286C857.857143 365.714286 923.398571 300.178571 923.398571 219.431429c0-80.681429-65.541429-146.29-146.361429-146.29-80.748571 0-146.211429 65.608571-146.211429 146.29C630.825714 300.178571 696.288571 365.714286 777.037143 365.714286z"
+                          fill="#ffffff" p-id="12051"></path>
+                    <path d="M1058.27 694.854286c-16.455714-139.994286-106.64-255.998571-281.305714-255.998571-51.272857 0-94.425714 10.971429-131.44 28.744286 64.001429 61.591429 105.988571 148.41 118.275714 255.564286l4.531429 35.691429c8.264286 62.244286 16.97 130.708571-8.777143 191.562857 5.998571 0.145714 11.192857 0.441429 17.41 0.441429C1119.637143 950.86 1074.727143 834.777143 1058.27 694.854286z"
+                          fill="#ffffff" p-id="12052"></path>
+                    <path d="M374.827143 438.855714c-196.462857 0-297.912857 132.611429-316.272857 292.645714-18.577143 159.888571-69.045714 292.5 316.272857 292.5 385.535714 0 334.915714-132.611429 316.338571-292.5C672.807143 571.467143 571.361429 438.855714 374.827143 438.855714z"
+                          fill="#ffffff" p-id="12053"></path>
+                    <path d="M570.044286 950.86"
+                          fill="#ffffff" p-id="12054"></path>
+                </svg>
+            </a>
+            <a href="https://app.yinxiang.com/b/pV2vT" class="icon-header-padding" target="_blank">
+
+                <svg t="1706001840767" class="icon icon-header" viewBox="0 0 1024 1024" version="1.1"
+                     xmlns="http://www.w3.org/2000/svg" p-id="14897" width="200" height="200">
+                    <path d="M469.333333 810.453333c0-11.648 9.450667-21.12 21.546667-21.12h42.24c11.904 0 21.546667 9.621333 21.546667 21.12v85.76c0 11.648-9.450667 21.12-21.546667 21.12h-42.24c-11.904 0-21.546667-9.621333-21.546667-21.12v-85.76z m133.909334-209.984c-8.469333 3.285333-16.896 6.762667-25.002667 10.837334-15.488 7.786667-23.765333 20.437333-24.341333 38.016-0.234667 7.317333 0.085333 14.848-1.514667 21.909333-4.672 20.629333-24.341333 34.688-44.309333 32.554667-22.549333-2.410667-38.272-19.328-39.125334-41.6-2.304-60.096 22.698667-103.829333 77.205334-130.005334a243.626667 243.626667 0 0 1 22.549333-9.728c73.92-26.666667 120.213333-99.818667 112-177.28-8.234667-77.802667-69.504-141.141333-146.410667-151.210666-100.672-13.226667-189.845333 62.805333-193.173333 164.330666-0.170667 5.546667-0.426667 11.285333-1.92 16.576-5.610667 20.16-25.898667 33.365333-45.909333 30.4-22.016-3.285333-37.546667-20.757333-37.290667-43.434666 0.768-62.72 20.394667-119.061333 62.293333-165.76 68.8-76.693333 155.306667-105.770667 255.061334-80.512 100.714667 25.493333 163.114667 92.757333 187.434666 194.197333 4.138667 17.322667 4.906667 35.477333 7.210667 53.226667-2.261333 106.496-65.984 198.954667-164.757333 237.482666z"
+                          fill="#ffffff" p-id="14898"></path>
+                </svg>
+            </a>
         </div>
+
 
     </div>
     <a class="down" href="#about" data-scroll><i class="icon fa fa-chevron-down" aria-hidden="true"></i></a>

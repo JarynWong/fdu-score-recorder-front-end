@@ -187,3 +187,15 @@
     justify-content: center; /* 水平居中 */
     align-items: center; /* 垂直居中 */
 }
+
+
+.icon-header-padding {
+    margin-right: 15px;
+    margin-left: 5px;
+}
+.icon-header:hover{
+    cursor: pointer;
+}
+.icon-header:hover path{
+    fill: #1a222c;
+}
