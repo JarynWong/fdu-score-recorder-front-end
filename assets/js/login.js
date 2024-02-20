@@ -1,5 +1,5 @@
-// window.targetHost = "http://127.0.0.1:8080";
-window.targetHost = "http://47.115.224.179:8080";
+window.targetHost = "http://127.0.0.1:8080";
+// window.targetHost = "http://47.115.224.179:8080";
 
 // 检查登陆状态
 function checkState() {
@@ -354,7 +354,7 @@ function buttonInit() {
             showError("请输入用户名或密码")
             return
         }
-        if (username.trim().length < 6 || password.trim().length < 6) {
+        if (username.trim().length < 13 || password.trim().length < 6) {
             showError("用户名或密码错误")
             return
         }
