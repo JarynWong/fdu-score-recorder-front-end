@@ -103,7 +103,11 @@ document.getElementById('queryScore-button').addEventListener('click', function 
                 var columnIndexToExclude = Number(subjectType) - 1; // 408所在的列的索引
 
                 // 遍历每一行
-                for (var i = 0; i < table.rows.length; i++) {
+                for (let j = 1; j < table.rows[0].cells.length; j++) {
+                    table.rows[0].cells[j].style.backgroundColor = 'rgba(0, 0, 0, 0.1)';
+                }
+
+                for (var i = 1; i < table.rows.length; i++) {
                     // 遍历每一个单元格
                     for (var j = 0; j < table.rows[i].cells.length; j++) {
                         // 如果不是408所在的列

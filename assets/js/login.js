@@ -1,5 +1,5 @@
-window.targetHost = "http://127.0.0.1:8080";
-// window.targetHost = "http://47.115.224.179:8080";
+// window.targetHost = "http://127.0.0.1:8080";
+window.targetHost = "http://47.115.224.179:8080";
 
 // 检查登陆状态
 function checkState() {
@@ -16,7 +16,7 @@ function checkState() {
             if (data.hasOwnProperty('msg') && data.msg === '登陆过期') {
                 // 显示登陆框
                 loginContainer.style.display = 'inline-block';
-                getApplyingMajor()
+                // getApplyingMajor()
                 var applyingMajorName = document.getElementById('applyingMajorName');
                 if (applyingMajorName) {
                     applyingMajorName.textContent = "登录后，即可查看以下信息";
@@ -24,7 +24,7 @@ function checkState() {
             } else if (data.hasOwnProperty('msg')) {
                 loginContainer.style.display = 'inline-block';
                 showError(data.msg)
-                getApplyingMajor()
+                // getApplyingMajor()
                 var applyingMajorName = document.getElementById('applyingMajorName');
                 if (applyingMajorName) {
                     applyingMajorName.textContent = "登录后，即可查看以下信息";
@@ -367,7 +367,7 @@ function buttonInit() {
         } else {
             // 获取select元素
             var selectedText = selectElement.options[selectElement.selectedIndex].textContent;
-            showWarn("请确认你的报考院系是否为：" + selectedText + "，确认后无法修改");
+            showWarn("请确认输入的信息为准考证号与证件号码");
         }
     });
 }
