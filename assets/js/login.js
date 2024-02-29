@@ -191,6 +191,17 @@ function afterLogin(data) {
     }
     generateColumnChart(xArray, cntArray, cntArray[0])
 
+
+    // 每日录分人数柱状图
+    xArray = ["x"]
+    cntArray = ["录分人数"]
+    for (let i = 0; i < res.recordCountColumnCharts.length; i++) {
+        let columnChart = res.recordCountColumnCharts[i]
+        xArray.push(columnChart.date)
+        cntArray.push(columnChart.count)
+    }
+    generateRecordCountColumnChart(xArray, cntArray, cntArray[0])
+
     var xYearArray = ["x1"]
     var scoreArray = ["录取分数"]
     for (let i = 0; i < res.lineCharts.length; i++) {
@@ -262,6 +273,44 @@ function generateColumnChart(xArray, cntArray) {
         },
 
         bindto: "#scoreColumnChart"
+    });
+}
+/**
+ * 生成每日录分人数柱状图
+ * @param xArray
+ * @param cntArray
+ */
+function generateRecordCountColumnChart(xArray, cntArray) {
+    var chart = bb.generate({
+
+        data: {
+            x: "x",
+            columns: [
+                xArray,
+                cntArray
+            ],
+            type: "bar", // for ESM specify as: bar()
+            colors: {
+                录分人数: "#0066CC", // 设置"data1"的颜色为深蓝色
+            },
+            labels: {
+                colors: function (color, d) {
+                    return "black";
+                }
+            }
+        },
+        axis: {
+            x: {
+                type: "category",
+                tick: {
+                    rotate: -70,
+                    multiline: false,
+                    tooltip: true
+                }
+            }
+        },
+
+        bindto: "#recordCountColumnChart"
     });
 }
 
