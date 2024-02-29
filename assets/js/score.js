@@ -17,7 +17,7 @@ document.getElementById('queryScore-button').addEventListener('click', function 
         })
         .then(data => {
             if (data.hasOwnProperty('msg') && data.msg === '登陆过期') {
-
+                showError('请刷新页面，重新登录')
             } else if (data.hasOwnProperty('msg')) {
                 showError(data.msg)
             } else {
