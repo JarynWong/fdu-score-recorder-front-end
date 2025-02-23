@@ -1,5 +1,5 @@
 // window.targetHost = "http://127.0.0.1:8080";
-window.targetHost = "http://47.115.224.179:8080";
+window.targetHost = "http://139.224.102.64:8080";
 
 // 检查登陆状态
 function checkState() {
